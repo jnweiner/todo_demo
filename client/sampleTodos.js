@@ -1,10 +1,10 @@
 const sampleTodos = [
-  {item: 'book movers', complete: true},
-  {item: 'start packing', complete: false},
-  {item: 'forward mail', complete: true},
-  {item: 'update magazine subscription', complete: true},
-  {item: 'donate old clothes', complete: false},
-  {item: 'order packing supplies', complete: false},
+  {task: 'book movers'},
+  {task: 'start packing'},
+  {task: 'forward mail'},
+  {task: 'update magazine subscription'},
+  {task: 'donate old clothes'},
+  {task: 'order packing supplies'},
 ]
 
 export default sampleTodos;
