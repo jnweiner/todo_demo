@@ -9,13 +9,23 @@ class App extends React.Component {
       todos: sampleTodos,
       currentTodo: sampleTodos[0]
     }
+
+    this.updateCurrentTodo = this.updateCurrentTodo.bind(this);
+  }
+
+  updateCurrentTodo(newCurrentTodo) {
+    this.setState({
+      currentTodo: newCurrentTodo
+    });
   }
 
   render() {
     return (
       <div>
-        <h1>My To-Do List</h1>
-        <TodoList todos={this.state.todos}/>
+        <h1>My To-do List</h1>
+        <h2>Current to-do: {this.state.currentTodo.task}</h2>
+        <h2>All to-dos:</h2>
+        <TodoList todos={this.state.todos} updateCurrentTodo={this.updateCurrentTodo}/>
       </div>
     )
   }
