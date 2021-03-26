@@ -7,7 +7,6 @@ const TodoList = (props) => (
       <Todo
         key={i}
         todo={todo}
-        updateCurrentTodo={props.updateCurrentTodo}
       />
     )}
   </ul>

@@ -1,10 +1,7 @@
 import React from 'react';
 
 const Todo = (props) => (
-  <li
-    className="todoitem"
-    onClick={() => props.updateCurrentTodo(props.todo)}
-  >
+  <li className="todoitem">
     <span>{props.todo.task}</span>
   </li>
 );
