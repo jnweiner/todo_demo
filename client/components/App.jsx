@@ -1,10 +1,11 @@
 import React from 'react';
+import sampleTodos from '../sampleTodos.js';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      todos: []
+      todos: sampleTodos
     }
   }
 
