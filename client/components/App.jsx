@@ -23,9 +23,12 @@ class App extends React.Component {
     return (
       <div>
         <h1>My To-do List</h1>
-        <h2>Current to-do: {this.state.currentTodo.task}</h2>
+        <h2>Current to-do: <span className="current">{this.state.currentTodo.task}</span></h2>
         <h2>All to-dos:</h2>
-        <TodoList todos={this.state.todos} updateCurrentTodo={this.updateCurrentTodo}/>
+        <TodoList
+          todos={this.state.todos}
+          updateCurrentTodo={this.updateCurrentTodo}
+        />
       </div>
     )
   }
